@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Courgette&family=Delius&family=Edu+QLD+Beginner:wght@500&family=Inconsolata&family=Kalam:wght@300&family=Lilita+One&family=Oleo+Script+Swash+Caps&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
+:root{
+    --colorprimario:#e6e3e3;
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.nav{
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+    background: var(--colorprimario);  
+    display: flex;
+    align-items: center;
+}
+.sectionlogo{
+    margin-left:0;
+    width:25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sectionlogo img{
+    width: 50%;
+    height: 90%;
+}
+.listnav{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    align-items: center; 
+}
+.contnav{
+    width:100%;
+}
+.contnav ul{
+    background: var(--colorprimario);  
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contnav ul li a{
+    background: var(--colorprimario);  
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 1.2em;
+    font-family: 'Alkatra', cursive;
+}
+.contnav ul li a:hover{
+    color: white;
+    background: red;
+    transition: 1.2s;
+}
+.baner{
+    display: none;
+}
+.ImgIcon{
+    width: 40px;
+    height: auto;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+@media(max-width:800px){
+    .container{
+        width: 100%;
+    }
+    .sectionlogo{
+        width: 30%;
+    }
+    .sectionlogo img{
+        width: 60%;
+    }
+    .nav{
+        background:#fff;
+    }
+    .listnav{
+        width: 69%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+    }
+    .contnav{
+        width: 100%;
+        height:70%;
+        position: absolute;
+    }
+    .contnav ul{
+        width: 100%;
+        height: 100%;
+    }
+    .contnav ul li a:hover{
+        color: white;
+        background: red;
+        transition: 1.2s;
+    }
+}
+@media(max-width:750px){
+ .container{
+    width: 100%;
+ }
+ .nav{
+    width: 100%;
+    height: 150px;
+    position:relative;
+ }
+ .sectionlogo{ 
+    margin-top:-3%;
+    width:35%;
+    margin-left: 30%;
+    z-index: 20;
+ }
+ .sectionlogo img{
+    width: 55%;
+    margin: auto;
+ }
+ .listnav{
+  width:100%;
+  position: absolute;
+  background-color: #ffff;
+  z-index: 9;
+ }
+ .contnav{
+    position: absolute;
+    margin-top:-20%;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+   margin-left:1%;
+   z-index: 5;
+   transition: 1s;
+   background: #fff;
+ }
+ .contnav ul{
+    width: 95%;
+    margin: auto;
+ }
+ .contnav ul li a:hover{
+    color: white;
+    background: red;
+    transition: 1.2s;
+}
+.checkbtn{
+    display:block;
+    z-index: 9;
+   background: #fff;
+    margin-left: 25%;
+    z-index: 20;
+}
+
+#check:checked ~ .listnav .contnav{
+    margin-top:45%;
+    position: absolute;
+    transition: 1s;
+    z-index: 9;
+}
+.baner{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    z-index:10;
+    margin-top:-4%;
+}
+}
+@media(max-width:400px){
+    .container{
+        width:100%;
+    }
+    .contnav{
+        margin-top:-20%;
+      margin-left: 0%;
+      position: absolute;
+     }
+     .sectionlogo{
+        width:50%;
+        height: 95%;
+     }
+     .sectionlogo img{
+        width: 90%;
+     }
+
+    #check:checked ~ .listnav .contnav{
+    margin-top:75%;
+   margin-left: 0%;
+   
+}
+}
+@media(max-width:420px){
+    .container{
+        width:100%;
+    }
+    .checkbtn{
+        margin-right: 5%;
+    }
+    .contnav{
+        margin-top:-20%;
+      margin-left: 0%;
+      position: absolute;
+     }
+     .sectionlogo{
+        margin-left:20%;
+        width:30%;
+        height: 80%;
+     }
+     .sectionlogo img{
+        width: 90%;
+     }
+     
+    .contnav{
+        height: 150px;
+        margin-top:-20%;
+      margin-left: 0%;
+     }
+     #check:checked ~ .listnav .contnav{
+        margin-top:70%;
+       margin-left: 0%;
+    }
+
+}
+
+

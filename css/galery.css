@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Courgette&family=Delius&family=Edu+QLD+Beginner:wght@500&family=Inconsolata&family=Kalam:wght@300&family=Lilita+One&family=Oleo+Script+Swash+Caps&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
+
+.galery{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background: #fff;
+    width: 300px;
+    height: 450px;
+    border: 1px solid gray;
+    margin: 5px 5px;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+    border-radius: 8px;
+}
+.contentimg{
+    width: 85%;
+    height: 200px;
+    margin: 20px auto;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+    border-radius: 6px; 
+}
+.contentimg img{
+    width: 100%;
+    height:200px;  
+    border-radius: 6px;  
+}
+.contentinfo{
+    /*border: 1px solid black;*/
+    width: 90%;
+    height: 200px;
+    margin: auto;
+}
+.contentinfo span{
+    font-size: 1.6em;
+    color:rgb(235, 38, 38);
+    font-weight: bold;
+    margin-left: 10%;
+    font-family: 'Alkatra', cursive;
+    text-decoration: overline;
+    text-decoration: underline;
+}
+.contentinfo p{
+    font-family: 'Alkatra', cursive;
+    font-weight: bold;
+}
+.contenidocosto{
+width: 100%;
+height: 55px;
+position: relative;
+margin-top:50px;
+}
+.costo{
+    margin-top: 5px;
+    z-index:6;
+    border-radius:0 4px 0 4px ;
+    margin-left: 70%;
+    width: 70px;
+    color: #fff;
+    background: rgb(200, 49, 49);
+    font-size: 1.6em;
+    font-weight:600;
+    font-family: 'Alkatra', cursive;
+    position: absolute;
+    box-shadow: -2px 0px  5px #000;
+    
+}
+.costo::before{
+    border-radius:0 4px 0 4px ;
+    position: absolute;
+    content:"L.160";
+    width: 75px;
+    height: 40px;
+    background:rgb(165, 15, 15);
+    transform: rotateZ(5deg);
+}
+
+/*card1*/
+.card1{
+    background: #fff;
+    width: 300px;
+    height: 450px;
+    border: 1px solid gray;
+    margin: 5px 5px;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+    border-radius: 8px;
+}
+.cervezaimg{
+    width: 85%;
+    height: 300px;
+    margin: 20px auto;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+    border-radius: 6px; 
+}
+.cervezaimg img{
+    width: 100%;
+    height:300px;  
+    border-radius: 6px;  
+}
+
+.contenidocost{
+    width: 100%;
+    height: 55px;
+    position: relative;
+    margin-top:2px;
+    display: flex;
+    justify-content: center;
+    }
+.cost{
+    margin-top: 5px;
+    z-index:10;
+    position:absolute;
+    margin-left: 65%;
+    border-radius:0 4px 0 4px ;
+    width: 70px;
+    color: #fff;
+    background:rgb(160, 29, 29);
+    font-size: 1.6em;
+    font-weight:600;
+    font-family: 'Alkatra', cursive;
+    transform: rotateZ(5deg);
+}
+
+#aftercard{
+    margin-top: 5px;
+    z-index: 1;
+    margin-left:66%;
+    border-radius:0 4px 0 4px ;
+    width: 72px;
+    height: 43px;
+    background:rgb(217, 217, 55);
+   transform: rotateZ(-3deg);
+   box-shadow: 0px 2px 3px #000;
+}
+
+@media(max-width:700px){
+    .galery{
+        width: 100%;
+    }
+    .card{
+        margin-top: 5px;
+        margin: auto;
+    }
+    .card1{
+        margin-top: 5px;
+        margin: auto;
+    }
+}
+
+@media(max-width:400px){
+    .galery{
+        width: 100%;
+        display: flex;
+    }
+    .card{
+        margin:10px auto;   
+    }
+    .card1{
+        margin:10px auto;      
+    }
+}
+@media(max-width:420px){
+    .galery{
+        width: 100%;
+        display: flex;
+    }
+    .card{
+        margin:10px auto;   
+    }
+    .card1{
+        margin:10px auto;      
+    }
+}
