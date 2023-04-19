@@ -76,6 +76,12 @@ align-items: center;
     animation-duration: 2s;
     animation: gps 2s linear infinite;
 }
+#contenlocation li{
+    list-style: none;
+}
+#contenlocation li a:hover{
+background:#fffcfc;
+}
 
 @keyframes gps{
     0%{transform:rotateY(0)}
